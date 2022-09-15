@@ -1,5 +1,94 @@
+/* reset da página toda */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/* Colocando a imagem no background centralizando e colocando o resto do back em uma cor */
+body{
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+/* Definindo a font do body com uma altura de 160% das linhas  */
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%
+}
+
+header{
+    padding-top: 32px;
+}
+/* Definindo a foto de perfil com um fundo em gradient */
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .4s;
+}
+
+header img{
+    width: 100%;
+    border-radius: 50%;
+}
+/* Definindo um hover para uma animação após colocar o mouse por cima */
+header div:hover{
+    transform: scale(1.1);
+}
+
+/* Definindo o corpo do projeto em uma largura maxiama de 580px se comportando ao meio da tela e um gap de 24px para dar um margin entre os sections */
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+    /* background-color: red; */
+}
+
+section{
+    color: white;
+    padding-top: 4px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+}
+
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA
+}
+
+section ul{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.games-list img{
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img{
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #443E54;
 }
